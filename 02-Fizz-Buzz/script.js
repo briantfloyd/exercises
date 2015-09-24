@@ -11,7 +11,7 @@ var code = function() {
 		}
 		
 		if (i % 5 === 0 ) {
-			nextNumber = nextNumber + "Buzz";
+			nextNumber += "Buzz";
 		}
 		
 		if (nextNumber === "") {
@@ -19,10 +19,10 @@ var code = function() {
 		}
 		
 		if (output.length > 0) {
-			output = output + " ";
+			output += " ";
 		}
 		
-		output = output + nextNumber;
+		output += nextNumber;
 	
 	}
 	
