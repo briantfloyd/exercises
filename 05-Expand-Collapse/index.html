@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Expand and Collapse</h1>
+	<p><em>Alternately displaying reveal and hide links for collapsible Bootstrap panel utilizing jQuery.</em></p>
+	
+	<h2>Code</h2>
+	<pre><code id="code"></code></pre>
+	
+	<h2>Output</h2>
+	<samp>
+		<div class="container">
+			<div class="row">				
+				<div class="col-xs-12">
+					<ul>
+						<li>
+							<strong>Item one</strong> | <span id="itemonetoggle" class="more-info"><a data-toggle="collapse" href="#itemone">Reveal</a><a class="hidden" data-toggle="collapse" href="#itemone">Hide</a></span>
+
+							<div id="itemone" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>Lorem ipsum</li>
+										<li>Lorem ipsum</li>
+										<li>Lorem ipsum</li>
+									</ul>
+									<p><span class="hide-info itemonetoggle"><a data-toggle="collapse" href="#itemone">Hide</a></span></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong>Item two</strong> | <span id="itemtwotoggle" class="more-info"><a data-toggle="collapse" href="#itemtwo">Reveal</a><a class="hidden" data-toggle="collapse" href="#itemtwo">Hide</a></span>
+
+							<div id="itemtwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>Lorem ipsum</li>
+										<li>Lorem ipsum</li>
+										<li>Lorem ipsum</li>
+									</ul>
+									<p><span class="hide-info itemtwotoggle"><a data-toggle="collapse" href="#itemtwo">Hide</a></span></p>
+								</div>
+							</div>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>		
+	</samp>
+
+	<h2>Sources</h2>
+	<ul>
+		<li><a href="http://www.w3schools.com/bootstrap/bootstrap_collapse.asp">http://www.w3schools.com/bootstrap/bootstrap_collapse.asp</a></li>
+	</ul>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
